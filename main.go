@@ -7,10 +7,9 @@ import (
 	"context"
 	"flag"
 
-	"github.com/rancher/wrangler-api/pkg/generated/controllers/apps"
 	"github.com/rancher/wrangler-sample/pkg/generated/controllers/samplecontroller.k8s.io"
+	"github.com/rancher/wrangler/pkg/generated/controllers/apps"
 	"github.com/rancher/wrangler/pkg/kubeconfig"
-	"github.com/rancher/wrangler/pkg/signals"
 	"github.com/rancher/wrangler/pkg/start"
 	"github.com/sirupsen/logrus"
 	"k8s.io/client-go/kubernetes"
@@ -29,7 +28,7 @@ func init() {
 
 func main() {
 	// set up signals so we handle the first shutdown signal gracefully
-	ctx := signals.SetupSignalHandler(context.Background())
+	ctx := context.Background()
 
 	// This will load the kubeconfig file in a style the same as kubectl
 	cfg, err := kubeconfig.GetNonInteractiveClientConfig(kubeconfigFile).ClientConfig()
