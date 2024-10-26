@@ -8,9 +8,9 @@ import (
 	"flag"
 
 	"github.com/rancher/wrangler-sample/pkg/generated/controllers/samplecontroller.k8s.io"
-	"github.com/rancher/wrangler/v2/pkg/generated/controllers/apps"
-	"github.com/rancher/wrangler/v2/pkg/kubeconfig"
-	"github.com/rancher/wrangler/v2/pkg/start"
+	"github.com/rancher/wrangler/v3/pkg/generated/controllers/apps"
+	"github.com/rancher/wrangler/v3/pkg/kubeconfig"
+	"github.com/rancher/wrangler/v3/pkg/start"
 	"github.com/sirupsen/logrus"
 	"k8s.io/client-go/kubernetes"
 )

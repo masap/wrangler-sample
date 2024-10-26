@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/rancher/wrangler-sample/pkg/apis/samplecontroller.k8s.io/v1alpha1"
-	controllergen "github.com/rancher/wrangler/v2/pkg/controller-gen"
-	"github.com/rancher/wrangler/v2/pkg/controller-gen/args"
+	controllergen "github.com/rancher/wrangler/v3/pkg/controller-gen"
+	"github.com/rancher/wrangler/v3/pkg/controller-gen/args"
 )
 
 func main() {
